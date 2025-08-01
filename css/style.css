@@ -26,8 +26,8 @@ body {
     --box-shadow: rgba(255, 255, 255, 0.75);
     --bg-color: rgb(255, 255, 255);
     --text-color: rgb(0, 0, 0);
-    --swap-color-speed: 1.275s;
-    --transform-speed: 1.275s;
+    --swap-color-speed: 0.275s;
+    --transform-speed: 0.275s;
 }
 
 .dark-theme {
@@ -195,7 +195,8 @@ button:active {
     right: 0;
     bottom: 0;
     overflow: visible;
-    transition: border-color var(--transform-speed) ease;
+    transition: border-color var(--transform-speed) ease,
+                outline var(--transform-speed) ease;
 }
 
 /* фоновые картинки */
