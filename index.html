@@ -1,13 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html class="dark-theme">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico?v=080720250135">
-        <link rel="stylesheet"    type="text/css"     href="styles/index.css?v=080720250135">
-        <title>LukovDev</title>
+        <link rel="shortcut icon" type="image/x-icon" href="https://github.com/LukovDev.png">
+        <link rel="stylesheet"    type="text/css"     href="css/pages/index.css?v=310720251955">
+        <script src="js/page.js?v=310720251955"></script>
+        <title>LukovDev Overview</title>
     </head>
-    <body>
-      Site in developing
+    <body class="inline-column">
+        <header class="no-select">
+            <div id="logo" onclick="window.location.href='index.html'" title="Перейти на главную страницу">
+                <div id="logo-icon"></div><div id="logo-text">LukovDev</div>
+            </div>
+            <div id="navigation" class="inline-row", style="gap: 16px">
+                <a class="a-button-like" href="">Проекты</a>
+                <div class="separator-column"></div>
+                <a class="a-button-like" href="">Статьи</a>
+                <div class="separator-column"></div>
+                <a class="a-button-like" href="">Посты</a>
+            </div>
+        </header>
+
+        <div id="scroll-to-top" title="На самый верх" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"></div>
+
+        <content>
+            Этот сайт в разработке
+        </content>
+
+        <footer>
+            <div class="inline-column">
+                <div id="footer-content">
+                    <div class="footer-content-item" id="feedback">
+                        Обратная связь:</br>
+                        <a target="_blank" href="https://t.me/mr_lukov">Telegram</a></br>
+                        <a href="https://discord.com/users/825853801939468329">Discord</a></br>
+                        <a target="_blank" href="https://vk.com/mr_lukov">VK</a></br>
+                    </div>
+                    <div class="footer-content-item">
+                        Подробнее:</br>
+                        GitHub:
+                        <a target="_blank" href="https://github.com/LukovDev">LukovDev</a></br>
+                    </div>
+                </div>
+                <center style="margin-top: 48px;">Спасибо за визит!</center>
+                <div class="inline-no-border">
+                    <div id="copyright">
+                        © <script>document.write(new Date().getFullYear())</script> LukovDev
+                    </div>
+                    <label class="theme-toggle no-select">
+                        <input type="checkbox" id="theme-toggle">
+                        <span class="slider">
+                            <span class="icon">
+                                <img id="theme-icon" src="content/images/icons/moon.png" alt="icon" />
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

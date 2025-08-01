@@ -1,0 +1,224 @@
+@import url("fonts.css");
+
+/* ---------------- Базовое: ---------------- */
+
+* {
+    scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-family: "montserrat-regular";
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: box-shadow var(--swap-color-speed) ease,
+                background-color var(--swap-color-speed) ease,
+                color var(--swap-color-speed) ease;
+}
+
+:root {
+    --box-shadow: rgba(255, 255, 255, 0.75);
+    --bg-color: rgb(255, 255, 255);
+    --text-color: rgb(0, 0, 0);
+    --swap-color-speed: 0.275s;
+    --transform-speed: 0.175s;
+}
+
+.dark-theme {
+    --box-shadow: rgba(0, 0, 0, 0.75);
+    --bg-color: rgb(0, 0, 0);
+    --text-color: rgb(255, 255, 255);
+}
+
+/* ---------------- Основное: ---------------- */
+
+a {
+    font-family: "montserrat-regular";
+    text-decoration: none;
+    color: rgb(128, 0, 255);
+}
+
+a:hover {
+    color: rgb(128, 92, 255);
+}
+
+button {
+    font-family: "montserrat-regular";
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(233, 233, 233);
+    color: rgba(0, 0, 0, 1.0);
+}
+
+button:active {
+    background-color: rgb(222, 222, 222);
+    color: rgba(0, 0, 0, 1.0);
+}
+
+.a-button-like {
+    font-family: "montserrat-medium";
+    font-size: 16px;
+    color: var(--text-color);
+    transition: box-shadow var(--swap-color-speed) ease,
+                background-color var(--swap-color-speed) ease,
+                color var(--swap-color-speed) ease;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.a-button-like:hover {
+    color: rgb(128, 128, 128);
+}
+
+/* ---------------- Дополнительное: ---------------- */
+
+.selectable {
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.no-img-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.breakable {
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 0px;
+    border-bottom: 0.5px solid rgb(45, 49, 70);
+}
+
+.inline:last-child {
+    border-bottom: none;
+}
+
+.inline-no-border {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+}
+
+.inline-row {
+    display: flex;
+    align-items: center;
+}
+
+.inline-row-center {
+    display: flex;
+    justify-content: center;
+}
+
+.inline-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 48px;
+    margin-bottom: 48px;
+    border-bottom: 1px solid rgba(86, 92, 128, 0.5);
+}
+
+.separator-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-top: 24px;
+    border-right: 48px;
+    border-right: 1px solid rgba(86, 92, 128, 0.5);
+}
+
+/* ---------------- Переключатель тем: ---------------- */
+
+.theme-toggle {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    margin: 8px 16px;
+}
+
+.theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    border: 1.5px solid var(--text-color);
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: border-color var(--transform-speed) ease,
+                background-image var(--transform-speed) ease;
+}
+
+.icon {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: -1px;
+    top: -1px;
+    box-shadow: 0 0 4px var(--text-color);
+    background-color: var(--text-color);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transform-speed) ease,
+                background-color var(--transform-speed) ease;
+}
+
+.icon img {
+    height: 24px;
+    width: 24px;
+}
+
+.theme-toggle input:checked + .slider {
+    background-color: rgb(0, 0, 255);
+}
+
+.theme-toggle input:checked + .slider .icon {
+    transform: translateX(24px);
+}
