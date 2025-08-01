@@ -134,7 +134,7 @@ footer #footer-content {
 }
 
 .footer-content-item:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 1px solid rgba(86, 92, 128, 0.5);
     padding-right: 16px;
     margin-right: 16px;
 }

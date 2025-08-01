@@ -31,30 +31,42 @@ function scroll_to(block_id) {
 
 
 window.addEventListener('DOMContentLoaded', () => {
+    document.documentElement.classList.add('disable-transitions');
+
+    setTimeout(() => {
+    document.documentElement.classList.remove('disable-transitions');
+    }, 50);
+
     const toggle = document.getElementById("theme-toggle");
     const icon = document.getElementById("theme-icon");
-    const slider = document.querySelector(".slider");
     const root = document.documentElement;
-
+   
+    const sunBg = document.querySelector('.label-sun-bg');
+    const moonBg = document.querySelector('.label-moon-bg');
+   
     function applyTheme(theme) {
         if (theme === 'dark') {
             root.classList.add('dark-theme');
             toggle.checked = true;
             icon.src = "content/images/icons/moon.png";
-            slider.style.backgroundImage = "url('../content/images/icons/moon-bg.png')";
+            if (sunBg && moonBg) {
+                sunBg.style.opacity = '0';
+                moonBg.style.opacity = '1';
+            }
         } else {
             root.classList.remove('dark-theme');
             toggle.checked = false;
             icon.src = "content/images/icons/sun.png";
-            slider.style.backgroundImage = "url('../content/images/icons/sun-bg.png')";
+            if (sunBg && moonBg) {
+                sunBg.style.opacity = '1';
+                moonBg.style.opacity = '0';
+            }
         }
     }
-
-    // Подгружаем сохранённую тему
+   
     const saved = localStorage.getItem("theme") || "dark";
     applyTheme(saved);
-
-    // Переключатель темы
+   
     toggle.addEventListener("change", () => {
         const theme = toggle.checked ? "dark" : "light";
         localStorage.setItem("theme", theme);
