@@ -9,7 +9,7 @@
 #
 
 📄 Обязательно посетите такие разделы как:
-| [Проекты](https://projects.lukovdev.ru) | [Статьи](https://articles.lukovdev.ru) | [Посты](https://posts.lukovdev.ru) |
+| [Проекты](projects.html) | [Статьи](articles.html) | [Посты](posts.html) |
 | --- | --- | --- |
 
 #
