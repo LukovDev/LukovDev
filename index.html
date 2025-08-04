@@ -5,7 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="shortcut icon" type="image/x-icon" href="https://github.com/LukovDev.png">
         <link rel="stylesheet"    type="text/css"     href="css/pages/index.css?v=310720251955">
+        <link rel="stylesheet"    type="text/css"     href="css/markdown.css?v=310720251955">
         <script src="js/page.js?v=310720251955"></script>
+
+        <script src="js/markdown.js?v=310720251955"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
         <title>LukovDev Overview</title>
     </head>
     <body class="inline-column">
@@ -25,7 +31,9 @@
         <div id="scroll-to-top" title="На самый верх" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"></div>
 
         <content>
-            Этот сайт в разработке
+            <div id="main-content">
+                Тут должен был быть контент из .md файла.
+            </div>
         </content>
 
         <footer>
@@ -62,5 +70,7 @@
                 </div>
             </div>
         </footer>
+
+        <script>load_markdown_file("https://raw.githubusercontent.com/LukovDev/LukovDev/refs/heads/master/index.md");</script>
     </body>
 </html>

@@ -17,13 +17,14 @@ header {
     right: 0;
 
     margin: 16px auto;
-    width: calc(100% - 256px);
+    width: calc(100% - 128px);
     max-width: 100%;
     padding: 16px;
 
     box-shadow: 0 0 6px var(--box-shadow);
     background-color: var(--bg-color);
     color: var(--text-color);
+    border: 1.5px solid var(--border-color);
     transition: box-shadow var(--swap-color-speed) ease,
                 background-color var(--swap-color-speed) ease,
                 color var(--swap-color-speed) ease;
@@ -74,7 +75,8 @@ header #logo-text {
     border: none;
     cursor: pointer;
     z-index: 8192;
-    transition: left 0.25s ease;
+    transition: left 0.25s ease,
+                background-color var(--swap-color-speed) ease;
 }
 
 #scroll-to-top.show {
@@ -89,8 +91,9 @@ header #logo-text {
 content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
-    padding-top: 48px;
+    padding-top: 128px;
     color: rgb(255, 255, 255);
 }
 
@@ -145,7 +148,9 @@ footer #footer-content {
     header {
         margin-top: 0px;
         width: 100%;
+        border: none;
         border-radius: 0px;
+        border-bottom: 1px solid var(--border-color);
     }
 
     header #navigation {

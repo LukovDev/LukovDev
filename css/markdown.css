@@ -1,0 +1,270 @@
+@import url("style.css");
+@import url("atom-one-dark.min.css");
+
+content #file-not-found {
+    font-family: "montserrat-medium";
+    font-size: 24px;
+    flex: 1;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+content #main-content {
+    font-family: "montserrat-regular";
+    font-size: 16px;
+    line-height: 1.75;
+
+    display: block;
+    width: calc(100% - 256px);
+    max-width: 100%;
+    align-self: center;
+    box-sizing: border-box;
+    padding: 48px 64px 48px 64px;
+    margin: 92px 128px 92px 128px;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 0 8px var(--text-color);
+    border-radius: 24px;
+    transition: box-shadow var(--swap-color-speed) ease,
+                background-color var(--swap-color-speed) ease,
+                color var(--swap-color-speed) ease;
+}
+
+content #main-content blockquote {
+    border-left: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5px;
+    margin-left: 16px;
+    padding-left: 32px;
+}
+
+content #main-content p {
+    margin: 0px 8px;
+}
+
+content #main-content h1 {
+    border-bottom: 1px solid var(--border-color);
+    margin: 0px 0px 16px 0px;
+    padding-bottom: 16px;
+}
+
+content #main-content h2 {
+    margin-top: 48px;
+}
+
+content #main-content h3 {
+    margin-top: 24px;
+}
+
+content #main-content tab {
+    margin-left: 24px;
+}
+
+content #main-content dtab {
+    margin-left: 64px;
+}
+
+content #main-content li {
+    margin-left: 32px;
+    margin-right: 16px;
+}
+
+content #main-content li li {
+    margin-left: 32px;
+    margin-right: 16px;
+}
+
+content #main-content hr {
+    margin: 32px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+content #main-content em {
+    font-family: "montserrat-regular";
+}
+
+content #main-content blockquote {
+    padding: 0 12px;
+    border-left: 4px solid var(--border-color);
+}
+
+content #main-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    margin-top: 8px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+content #main-content code {
+    font-family: "clacon";
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.1;
+
+    background: var(--code-bg-color);
+    margin: 2px;
+    border-radius: 6px;
+    padding: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    transition: background var(--swap-color-speed) ease;
+}
+
+content #main-content pre {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    position: relative;
+    background: rgb(22, 27, 34);
+    min-width: 156px;
+    padding: none;
+    margin: 16px 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px var(--box-shadow-05);
+    transition: box-shadow var(--swap-color-speed) ease;
+}
+
+content #main-content pre code {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    margin: 16px 16px 16px 8px !important;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+content #main-content pre .code-block-header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 8px 8px 16px;
+    background: rgb(22, 27, 34);
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+content #main-content pre .code-block-header span {
+    font-family: "montserrat-medium";
+    font-size: 16px;
+}
+
+content #main-content pre .md-copy-button {
+    color: rgba(255, 255, 255, 1.0);
+    font-family: "montserrat-regular";
+    font-size: 13px;
+    padding: 8px 10px;
+    background-color: rgb(42, 47, 54);
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.1);
+    user-select: none;
+}
+
+content #main-content pre .md-copy-button:hover {
+    background-color: rgb(37, 42, 49);
+    color: rgb(255, 255, 255);
+}
+
+content #main-content pre .md-copy-button:active {
+    background-color: rgb(34, 39, 46);
+    color: rgba(255, 255, 255, 1.0);
+}
+
+content #main-content pre .line-numbers {
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 16px;
+    text-align: right;
+
+    background: rgb(14, 19, 24);
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom-left-radius: 16px;
+    user-select: none;
+}
+
+content #main-content pre .line-numbers > span {
+    font-family: "clacon";
+    font-size: 16px;
+    line-height: 1.1;
+    display: block;
+    color: rgb(192, 192, 192);
+    background: rgba(0, 0, 0, 0);
+}
+
+/* ---------------- Подгон основных элементов страницы под малый размер экрана ---------------- */
+
+@media screen and (max-width: 720px) {
+    content #main-content {
+        padding: 24px 24px 48px 24px;
+        margin: 24px 0px 48px 0px;
+        border-radius: 0px;
+        width: 100%;
+    }
+
+    content #main-content table {
+        margin: 8px 0px;
+        font-size: 16px;
+    }
+
+    content #main-content h2 {
+        margin-top: 32px;
+    }
+
+    content #main-content h3, h4, h5, h6 {
+        margin-top: 16px;
+    }
+
+    content #main-content tab {
+        margin-left: 16px;
+    }
+
+    content #main-content dtab {
+        margin-left: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    content #main-content {
+        font-size: 14px;
+    }
+
+    content #main-content code {
+        font-size: 14px;
+    }
+
+    content #main-content pre .code-block-header span {
+        font-size: 14px;
+    }
+
+    content #main-content pre .md-copy-button {
+        font-size: 14px;
+    }
+
+    content #main-content pre .line-numbers > span {
+        font-size: 14px;
+    }
+}

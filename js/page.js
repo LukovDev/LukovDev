@@ -41,8 +41,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const icon = document.getElementById("theme-icon");
     const root = document.documentElement;
    
-    const sunBg = document.querySelector('.label-sun-bg');
-    const moonBg = document.querySelector('.label-moon-bg');
+    const sunBg = document.querySelector(".label-sun-bg");
+    const moonBg = document.querySelector(".label-moon-bg");
    
     function applyTheme(theme) {
         if (theme === 'dark') {
