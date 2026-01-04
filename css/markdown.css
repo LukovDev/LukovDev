@@ -107,7 +107,7 @@ content #main-content code {
     font-weight: normal;
     line-height: 1.1;
 
-    background: var(--code-bg-color);
+    background: rgb(41, 47, 55);
     margin: 2px;
     border-radius: 6px;
     padding: 5px;
@@ -121,13 +121,13 @@ content #main-content pre {
     display: grid;
     grid-template-columns: auto 1fr;
     position: relative;
-    background: rgb(22, 27, 34);
+    background: rgb(21, 27, 35);
     min-width: 156px;
     padding: none;
     margin: 16px 32px;
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    box-shadow: 0px 4px 8px var(--box-shadow-05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
     transition: box-shadow var(--swap-color-speed) ease;
 }
 
@@ -147,7 +147,7 @@ content #main-content pre .code-block-header {
     justify-content: space-between;
     align-items: center;
     padding: 8px 8px 8px 16px;
-    background: rgb(22, 27, 34);
+    background: rgb(21, 27, 35);
     color: rgb(255, 255, 255);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -164,7 +164,7 @@ content #main-content pre .md-copy-button {
     font-family: "montserrat-regular";
     font-size: 13px;
     padding: 8px 10px;
-    background-color: rgb(42, 47, 54);
+    background-color: rgb(41, 47, 55);
     text-decoration: none;
     border: none;
     border-radius: 8px;
@@ -175,12 +175,12 @@ content #main-content pre .md-copy-button {
 }
 
 content #main-content pre .md-copy-button:hover {
-    background-color: rgb(37, 42, 49);
+    background-color: rgb(34, 39, 46);
     color: rgb(255, 255, 255);
 }
 
 content #main-content pre .md-copy-button:active {
-    background-color: rgb(34, 39, 46);
+    background-color: rgb(30, 35, 42);
     color: rgba(255, 255, 255, 1.0);
 }
 
@@ -191,7 +191,7 @@ content #main-content pre .line-numbers {
     padding: 16px;
     text-align: right;
 
-    background: rgb(14, 19, 24);
+    background: rgb(13, 17, 23);
     border-right: 1px solid rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 16px;
     user-select: none;

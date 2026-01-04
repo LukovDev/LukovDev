@@ -20,13 +20,7 @@ body {
 }
 
 :root {
-    --box-shadow: rgba(255, 255, 255, 0.75);
-    --bg-color: rgb(255, 255, 255);
-    --code-bg-color: rgb(200, 200, 200);
-    --text-color: rgb(0, 0, 0);
     --border-color: rgba(86, 92, 128, 0.5);
-    --box-shadow-05: rgba(0, 0, 0, 0.5);
-
     --table-header-color: rgb(13, 17, 23);
     --table-tr-1-color: rgb(13, 17, 23);
     --table-tr-2-color: rgb(21, 27, 35);
@@ -106,7 +100,7 @@ button:active {
 .a-button-like {
     font-family: "montserrat-medium";
     font-size: 16px;
-    color: var(--text-color);
+    color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
 }
 
