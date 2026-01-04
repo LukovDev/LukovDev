@@ -148,7 +148,35 @@ GPT-Mini - Мини Генеративная Предварительно-обу
 
 #### [Scripts](https://github.com/LukovDev/Scripts):
 Просто репозиторий с набором скриптов на Python, которые я иногда пишу и которые возможно, могут быть полезны.
-
+```json
+{
+    "program-name":  "C Program Framework",
+    "program-icon":  "data/icons/icon.ico",
+    "source-dirs":   ["src/"],
+    "build-dir":     "build/",
+    "bin-dir-name":  "bin",
+    "obj-dir-name":  "obj",
+    "libs-output":   "",
+    "build-logging": true,
+    "multi-threads": true,
+    "strip":         false,
+    "progress-percent": true,
+    "console-disabled": false,
+    "defines":       [],
+    "includes":      [],
+    "libraries":     [],
+    "libnames":      [],
+    "optimization":  "-O2",
+    "std-c":         "c17",
+    "std-cpp":       "c++17",
+    "compiler-c":    "gcc",
+    "compiler-cpp":  "g++",
+    "linker":        "g++",
+    "warnings":      ["-Wall"],
+    "compile-flags": [],
+    "linker-flags":  []
+}
+```
 #
 
 ### 📬 Социальные сети:
