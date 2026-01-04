@@ -4,73 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link rel="shortcut icon" type="image/x-icon" href="https://github.com/LukovDev.png">
-        <link rel="stylesheet"    type="text/css"     href="css/pages/index.css?v=040820251919">
-        <link rel="stylesheet"    type="text/css"     href="css/markdown.css?v=040820251919">
-        <script src="js/page.js?v=040820251919"></script>
+        <link rel="stylesheet"    type="text/css"     href="css/index.css?v=040120261406">
+        <link rel="stylesheet"    type="text/css"     href="css/markdown.css?v=040120261406">
 
-        <script src="js/markdown.js?v=040820251919"></script>
+        <script src="js/page.js?v=040120261406"></script>
+        <script src="js/markdown.js?v=040120261406"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js?v=040820251919"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js?v=040120261406"></script>
 
-        <title>LukovDev Overview</title>
+        <title>LukovDev</title>
     </head>
     <body class="inline-column">
-        <header class="no-select">
-            <div id="logo" onclick="window.location.href='index.html'" title="Перейти на главную страницу">
-                <div id="logo-icon"></div><div id="logo-text">LukovDev</div>
-            </div>
-            <div id="navigation" class="inline-row", style="gap: 16px">
-                <a class="a-button-like" href="projects.html">Проекты</a>
-                <div class="separator-column"></div>
-                <a class="a-button-like" href="articles.html">Статьи</a>
-                <div class="separator-column"></div>
-                <a class="a-button-like" href="posts.html">Посты</a>
-            </div>
-        </header>
-
         <div id="scroll-to-top" title="На самый верх" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"></div>
-
         <content>
-            <div id="main-content">
-                Тут должен был быть контент из .md файла.
-            </div>
+            <div id="main-content">Загрузка...</div>
         </content>
-
-        <footer>
-            <div class="inline-column">
-                <div id="footer-content">
-                    <div class="footer-content-item" id="feedback">
-                        Обратная связь:</br>
-                        <a target="_blank" href="https://t.me/mr_lukov">Telegram</a></br>
-                        <a href="https://discord.com/users/825853801939468329">Discord</a></br>
-                        <a target="_blank" href="https://vk.com/mr_lukov">VK</a></br>
-                    </div>
-                    <div class="footer-content-item">
-                        Подробнее:</br>
-                        GitHub:
-                        <a target="_blank" href="https://github.com/LukovDev">LukovDev</a></br>
-                    </div>
-                </div>
-                <center style="margin-top: 48px;">Спасибо за визит!</center>
-                <div class="inline-no-border">
-                    <div id="copyright">
-                        © <script>document.write(new Date().getFullYear())</script> LukovDev
-                    </div>
-                    <label class="theme-toggle no-select">
-                        <input type="checkbox" id="theme-toggle">
-                        <span class="slider">
-                            <img src="content/images/icons/sun-bg.png" class="label-bg label-sun-bg" alt="sun-bg" draggable="false" />
-                            <img src="content/images/icons/moon-bg.png" class="label-bg label-moon-bg" alt="moon-bg" draggable="false" />
-
-                            <span class="label-icon">
-                                <img id="theme-icon" src="content/images/icons/moon.png" alt="icon" draggable="false" />
-                            </span>
-                        </span>
-                    </label>
-                </div>
-            </div>
-        </footer>
-
         <script>load_markdown_file("https://raw.githubusercontent.com/LukovDev/LukovDev/refs/heads/master/index.md");</script>
     </body>
 

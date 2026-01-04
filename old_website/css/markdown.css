@@ -26,7 +26,16 @@ content #main-content {
     max-width: 100%;
     align-self: center;
     box-sizing: border-box;
-    margin: 92px 192px 92px 192px;
+    padding: 48px 64px 48px 64px;
+    margin: 92px 128px 92px 128px;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 0 8px var(--text-color);
+    border-radius: 24px;
+    transition: box-shadow var(--swap-color-speed) ease,
+                background-color var(--swap-color-speed) ease,
+                color var(--swap-color-speed) ease;
 }
 
 content #main-content blockquote {
@@ -210,7 +219,7 @@ content #main-content pre .line-numbers > span {
 
 @media screen and (max-width: 720px) {
     content #main-content {
-        padding: 24px 24px 24px 24px;
+        padding: 24px 24px 48px 24px;
         margin: 24px 0px 48px 0px;
         border-radius: 0px;
         width: 100%;

@@ -3,7 +3,7 @@
 /* ---------------- Базовое: ---------------- */
 
 * {
-    scrollbar-color: rgb(159, 162, 167) rgb(10, 13, 20);
+    scrollbar-color: rgb(255, 255, 255) rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     outline: none;
@@ -15,8 +15,11 @@ html.disable-transitions * {
 
 body {
     font-family: "montserrat-regular";
-    background-color: rgb(13, 17, 23);
-    color: rgb(255, 255, 255);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: box-shadow var(--swap-color-speed) ease,
+                background-color var(--swap-color-speed) ease,
+                color var(--swap-color-speed) ease;
 }
 
 :root {
@@ -27,9 +30,24 @@ body {
     --border-color: rgba(86, 92, 128, 0.5);
     --box-shadow-05: rgba(0, 0, 0, 0.5);
 
-    --table-header-color: rgb(13, 17, 23);
-    --table-tr-1-color: rgb(13, 17, 23);
-    --table-tr-2-color: rgb(21, 27, 35);
+    --table-header-color: rgb(255, 255, 255);
+    --table-tr-1-color: rgb(255, 255, 255);
+    --table-tr-2-color: rgb(234, 236, 238);
+
+    --swap-color-speed: 0.275s;
+    --transform-speed: 0.275s;
+}
+
+.dark-theme {
+    --box-shadow: rgba(0, 0, 0, 0.75);
+    --bg-color: rgb(0.1, 0.15, 0.2);
+    --code-bg-color: rgb(48, 48, 48);
+    --text-color: rgb(255, 255, 255);
+    --box-shadow-05: rgba(255, 255, 255, 0.5);
+
+    --table-header-color: rgb(0, 0, 0);
+    --table-tr-1-color: rgb(0, 0, 0);
+    --table-tr-2-color: rgb(16, 18, 20);
 }
 
 table {
@@ -40,10 +58,12 @@ table {
     margin: 16px 32px;
     overflow: hidden;
     /* box-shadow: 0px 4px 8px var(--box-shadow-05); */
+    transition: box-shadow var(--swap-color-speed) ease;
 }
 
 table thead {
     background-color: var(--table-header-color);
+    transition: background-color var(--swap-color-speed) ease;
 }
 
 table th,
@@ -63,10 +83,12 @@ table th {
 
 table tbody tr {
     background-color: var(--table-tr-1-color);
+    transition: background-color var(--swap-color-speed) ease;
 }
 
 table tbody tr:nth-child(even) {
     background-color: var(--table-tr-2-color);
+    transition: background-color var(--swap-color-speed) ease;
 }
 
 
@@ -74,13 +96,12 @@ table tbody tr:nth-child(even) {
 
 a {
     font-family: "montserrat-regular";
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    color: rgb(68, 147, 248);
+    text-decoration: none;
+    color: rgb(128, 0, 255);
 }
 
 a:hover {
-    color: rgb(48, 127, 228);
+    color: rgb(128, 92, 255);
 }
 
 button {
@@ -107,6 +128,9 @@ button:active {
     font-family: "montserrat-medium";
     font-size: 16px;
     color: var(--text-color);
+    transition: box-shadow var(--swap-color-speed) ease,
+                background-color var(--swap-color-speed) ease,
+                color var(--swap-color-speed) ease;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -197,4 +221,83 @@ button:active {
     padding-top: 24px;
     border-right: 48px;
     border-right: 1px solid var(--border-color);
+}
+
+/* ---------------- Переключатель тем: ---------------- */
+
+.theme-toggle {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    margin: 8px 16px;
+}
+
+.theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 12px;
+    outline: 2px solid var(--text-color);
+    outline-offset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: visible;
+    transition: border-color var(--transform-speed) ease,
+                outline var(--transform-speed) ease;
+}
+
+/* фоновые картинки */
+.slider .label-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity var(--transform-speed) ease;
+    z-index: 0;
+}
+
+.label-sun-bg {
+    opacity: 0;
+}
+
+.label-moon-bg {
+    opacity: 1;
+}
+
+/* кнопка */
+.label-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 24px;
+    box-shadow: 0 0 4px var(--text-color);
+    background-color: var(--text-color);
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform var(--transform-speed) ease,
+                background-color var(--transform-speed) ease;
+    z-index: 1;
+}
+
+.label-icon img {
+    height: 24px;
+    width: 24px;
+}
+
+.theme-toggle input:checked + .slider .label-icon {
+    transform: translate(24px, -50%);
 }
