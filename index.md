@@ -2,25 +2,18 @@
 
 ### Немного о себе:
 
-Я **LukovDev** (а также известный как **@mr_lukov**, **Ruslan Lukov**, **Lukov**, и так далее), разработчик игр и своего софта.</br></br>
+**LukovDev** (а также известный как **@mr_lukov**, **Ruslan Lukov**, **Lukov**, и так далее), разработчик игр и собственного софта.</br></br>
 
-Я создатель своих фреймворков для проектов и игр. Системный программист, технарь, инженер (в основном самоучка).</br>
+Создатель собственных фреймворков для проектов и игр. Системный программист, технарь, инженер (в основном самоучка).</br>
 Разрабатываю системное П.О, игры и автоматизирую процессы. Ориентируюсь на разработке ТОЛЬКО для себя (в своих интересах).</br></br>
 
 На своём [GitHub](https://github.com/LukovDev) публикую исходные коды проектов.</br></br>
 
-**LukovDev** - Это НЕ бренд. Это мой никнейм в среде авторов-разработчиков. Обычно я предпочитаю использовать более сокращенный никнейм - **Lukov**.</br></br>
+**LukovDev** - Это НЕ бренд. Это никнейм в среде авторов-разработчиков. Обычно я предпочитаю использовать более сокращенный никнейм - **Lukov**.</br></br>
 
 Меня зовут **Ruslan Lukov**. Настоящую фамилию я предпочитаю не оглашать из за конфиденциальности и сложности произношения.</br>
-**Lukov** _(2023-2026)_ - Придуманный никнейм в интернете. Изначально берёт видоизмененный прошлый никнейм **Kukov** _(2020-2022)_.</br>
-Также был малоизвестный никнейм **Zluka**, который просуществовал недолго.</br>
 Выдуманный никнейм **Lukov** и сопутствующие (кроме имени), не несут никакой информации из реальной жизни. Это всего лишь виртуальное имя.</br>
-Я Русский, и это мой основной язык. Дата рождения: 28 июня.</br></br>
-
-В основном люблю индустриальные игры, выживание, шутеры и немного про цивилизации, но не только. Редко играю в игры.</br>
-Люблю слушать музыку и смотреть сериалы и фильмы, но в основном только по своему вкусу.</br></br>
-
-Этот сайт лично мой. Я его сделал чтобы официально дать о себе информацию. Сайт этот простой, основан на парсере и генераторе **Markdown** текста.</br>
+Я Русский, и это мой основной язык. Дата рождения: 28 июня (год рождения скрыт).</br></br>
 
 #
 
@@ -28,7 +21,7 @@
 Вот основные проекты, над которыми я работал и готов поделиться (но это не единственные проекты над которыми я работал):
 
 #### [PyGDF (Python Game Development Framework)](https://github.com/LukovDev/PyGDF):
-<img width="128" height="128" alt="runapp-icon" src="https://github.com/user-attachments/assets/60b2f626-34f9-44f6-b693-0f78c08fc6b1" /></br>
+<img width="128" height="128" src="https://github.com/user-attachments/assets/60b2f626-34f9-44f6-b693-0f78c08fc6b1" /></br>
 Это один из самых удачных и больших проектов, над которым я работал больше полутора лет.</br>
 Предназначен для разработки игр на пайтон, предоставляя готовый фреймворк и мощное ядро (движок) - GDF.</br></br>
 
@@ -44,7 +37,7 @@
 #
 
 #### [CGDF (C Game Development Framework)](https://github.com/LukovDev/CGDF):
-<img width="128" height="128" alt="CGDF2x2" src="https://github.com/user-attachments/assets/f47d27a9-5df8-4504-a23a-0e18b6ffa704" /></br>
+<img width="128" height="128" src="https://github.com/user-attachments/assets/f47d27a9-5df8-4504-a23a-0e18b6ffa704" /></br>
 Это прямой потомок проекта **[PyGDF](https://github.com/LukovDev/PyGDF)**, но с переходом на языки C и частично C++</br></br>
 
 Проект был создан как единая кроссплатформенная (для ПК) среда разработки игр и софта. Благодаря опыту разработки фреймворка **PyGDF**, в этом проекте учитываются разные нюансы и проблемы, которые нельзя было решить в PyGDF.</br></br>
@@ -60,12 +53,14 @@
 
 Фреймворк рассчитан на работу с 2D и 3D графикой **OpenGL 3.3+**.</br>
 В качестве оконной библиотеки - **SDL3**</br>
-Благодаря модульной сборки программы, возможно будет переписать графическую составляющую под **Vulkan** (пока не планируется из за особой сложности перехода).</br>
+Благодаря модульной сборки программы, возможно будет переписать графическую составляющую под **Vulkan** (пока не планируется из за особой сложности перехода).</br></br>
+
+Документация на данный момент отсутствует.</br>
 
 #
 
 #### [C Program Framework](https://github.com/LukovDev/C-Program-Framework):
-<img width="128" height="128" alt="icon" src="https://github.com/user-attachments/assets/cda8ece5-a6f1-49b9-869c-80264b7b2169" /></br>
+<img width="128" height="128" src="https://github.com/user-attachments/assets/cda8ece5-a6f1-49b9-869c-80264b7b2169" /></br>
 Простой фреймворк для разработки своих проектов на языке программирования C/C++</br></br>
 
 Фреймворк предоставляет гибкую и простую структуру файлов и папок, а также минималистичную, прозрачную систему сборки.</br></br>
@@ -75,7 +70,7 @@
 #
 
 #### [Python Program Framework](https://github.com/LukovDev/Python-Program-Framework):
-<img width="128" height="128" alt="build-icon" src="https://github.com/user-attachments/assets/2da80428-afc6-467c-a7e1-3327ce5a0e31" /></br>
+<img width="128" height="128" src="https://github.com/user-attachments/assets/2da80428-afc6-467c-a7e1-3327ce5a0e31" /></br>
 Незамышлённый фреймворк для разработки своих больших и не только, проектов на Python.</br></br>
 
 Представляет из себя гибкую и простую структуру файлов и папок. А так же, этот фреймворк имеет систему сборки проекта.</br></br>
@@ -104,7 +99,7 @@
 #
 
 #### [RaspberryPi Status Panel](https://github.com/LukovDev/Pi-Status-Panel):
-<img width="190" height="283" alt="image" src="https://github.com/user-attachments/assets/b587874d-a2d2-4f0b-925e-388581358f23" /></br>
+<img width="190" height="283" src="https://github.com/user-attachments/assets/b587874d-a2d2-4f0b-925e-388581358f23" /></br>
 Вебсайт статистики для вашей Raspberry Pi.</br></br>
 
 Рассчитан и разрабатывался под Raspberry Pi 5. Запускает сайт в локальной сети.</br>
@@ -115,7 +110,7 @@
 #
 
 #### [RaspberryPi Status SSD1306](https://github.com/LukovDev/Pi-Status-SSD1306):
-<img width="426" height="240" alt="image" src="https://github.com/user-attachments/assets/c31fbdc3-af4e-42e0-9a5c-be1c96d0f57b" /></br>
+<img width="426" height="240" src="https://github.com/user-attachments/assets/c31fbdc3-af4e-42e0-9a5c-be1c96d0f57b" /></br>
 Простая и адаптированная под маленький экранчик статус панель проекта **RaspberryPi Status Panel**.</br></br>
 
 Рассчитан на экранчик `SSD1306` (128x64px).</br></br>
@@ -125,7 +120,7 @@
 #
 
 #### [Игра песочница на PyGame](https://github.com/LukovDev/SandBox-PyGame):
-<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/19f40ce1-c90c-4c75-a0e1-2f65a17e8c4a" /></br>
+<img width="256" height="256" src="https://github.com/user-attachments/assets/19f40ce1-c90c-4c75-a0e1-2f65a17e8c4a" /></br>
 Простая игра на **PyGame**. Можно настроить под себя или изучить код. Играть конечно, тоже можно.</br></br>
 
 Инструкция по использованию есть на странице проекта.</br>
@@ -133,7 +128,7 @@
 #
 
 #### [Ship Wars на PyGDF](https://github.com/LukovDev/Ship-Wars-PyGDF):
-<img width="200" height="277" alt="image" src="https://github.com/user-attachments/assets/2bd465f3-7ed0-487b-9ca2-e9d4ed8f60bc" /></br>
+<img width="200" height="277" src="https://github.com/user-attachments/assets/2bd465f3-7ed0-487b-9ca2-e9d4ed8f60bc" /></br>
 Простая игрушка сделанная на PyGDF для тестирования возможностей.</br></br>
 
 Код очень простой также как и игра. Изучайте код этой простой игры чтобы познать базовые возможности PyGDF.</br>
@@ -144,7 +139,7 @@
 #
 
 #### [Bonfire Remaked Game](https://github.com/LukovDev/Bonfire-Remake-Game):
-<img width="478" height="270" alt="image" src="https://github.com/user-attachments/assets/0271f2bf-7aa0-44fe-a840-6c45459aa49a" /></br>
+<img width="478" height="270" src="https://github.com/user-attachments/assets/0271f2bf-7aa0-44fe-a840-6c45459aa49a" /></br>
 Эта игра - переделанная моя первая игра сделанная в 2021 году на PyGame.</br>
 Ремейк в свою очередь полностью построен на PyGDF (ядро gdf-1.2, ранняя версия ядра gdf-v1.2-release!).</br></br>
 
@@ -154,7 +149,7 @@
 #
 
 #### [GPT-Mini](https://github.com/LukovDev/gpt-mini):
-<img width="276" height="291" alt="image" src="https://github.com/user-attachments/assets/4baabd4c-6a27-4fee-bdd0-c5354695e3de" /></br>
+<img width="276" height="291" src="https://github.com/user-attachments/assets/4baabd4c-6a27-4fee-bdd0-c5354695e3de" /></br>
 GPT-Mini - Мини Генеративная Предварительно-обученная Трансформенная модель.</br>
 Является полностью экспериментальным проектом. Поведение ИИ и принцип работы не до конца понятен.</br></br>
 
@@ -182,6 +177,6 @@ GPT-Mini - Мини Генеративная Предварительно-обу
 
 ### 📬 Социальные сети:
 - [Telegram](https://t.me/mr_lukov)
-- [Telegram Канал](https://t.me/grandeluka)
+- [Telegram канал](https://t.me/grandeluka)
 - [ВКонтакте](https://vk.com/mr_lukov)
 - kukovdev@gmail.com
